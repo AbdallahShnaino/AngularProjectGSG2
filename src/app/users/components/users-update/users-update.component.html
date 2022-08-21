@@ -1,0 +1,52 @@
+
+
+<div class="title">Update User</div>
+<div class="row">
+  <div class="col-2"></div>
+  <div class="col-8 py-2">
+    <form>
+      
+      <div class="form-group my-2">
+        <label for="firstnameField">First Name</label>
+        <input type="text" class="form-control" id="firstnameField" name="firstName" aria-describedby="emailHelp" placeholder="Ex. Ahmed" [(ngModel)]="this.user.firstName">
+      </div>
+      
+      <div class="form-group my-2">
+        <label for="lastnameField">Last Name</label>
+        <input  type="text" class="form-control" id="lastnameField" aria-describedby="emailHelp" name="lastName" placeholder="Ex. Ali"
+        [(ngModel)]="this.user.lastName">
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="emailAddress" placeholder="Ex. example@gmail.com" [(ngModel)]="this.user.emailAddress">    
+      </div>
+      <div class="form-group">
+        <label for="ageField">Age</label>
+        <input type="number" class="form-control" id="ageField" aria-describedby="emailHelp" name="age" min="16" max="60"  placeholder="Ex. 22" [(ngModel)]="this.user.age">
+      </div>
+    
+    
+      <div class="form-group my-2">
+        <label for="PhoneNumberField">Phone Number</label>
+        <input type="text" class="form-control" id="PhoneNumberField" aria-describedby="emailHelp" name="phoneNumber" placeholder="Ex. 0599234567" [(ngModel)]="this.user.phoneNumber">
+      </div>
+    
+      <div class="form-group my-2">
+        <label for="postionField">Postion</label>
+        <input type="text" class="form-control" id="postionField" aria-describedby="emailHelp" name="postion" placeholder="Ex. Student"
+        [(ngModel)]="this.user.postion">
+      </div>
+    
+      <div class="form-group my-2">
+        <label for="addressField">Address</label>
+        <input type="text" class="form-control" id="addressField" aria-describedby="emailHelp" name="address" placeholder="Ex. Gaza - Palestine" [(ngModel)]="this.user.address">
+      </div>
+      
+    
+      <button (click)="onFormSubbmited()" class="myBtn btn btn-primary  my-2">Update User</button>
+    </form>
+  </div>
+  <div class="col-2"></div>
+</div>
+
