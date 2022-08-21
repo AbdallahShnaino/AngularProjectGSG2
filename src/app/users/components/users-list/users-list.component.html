@@ -1,4 +1,4 @@
-<div *ngIf="this.users && this.users.length > 0" class="users-list">
+<div  class="users-list">
 
 <table class="table">
   <thead class="thead-light">
@@ -21,7 +21,7 @@
 
     </tr>
   </thead>
-  <tbody>
+  <tbody *ngIf="this.users && this.users.length > 0">
     <tr *ngFor="let user of this.users">
       <th scope="row">{{user.id}}</th>
       <td>{{user.firstName}}</td>
